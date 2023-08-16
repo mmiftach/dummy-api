@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "1f9b4942-0a51-4f78-bc56-0ecdecf4273a",
+		"name": "dummyAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9047409"
+	},
+	"item": [
+		{
+			"name": "pets",
+			"item": [
+				{
+					"name": "Get All Pets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "tittle 4",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "tittle 4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/pets",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Pets",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "name1",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "phone1",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "address1",
+									"type": "text"
+								},
+								{
+									"key": "pet",
+									"value": "pet1",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "color1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/pets",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Pets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/pets/:id",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pets",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Single Pets",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "name1",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "phone1",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "address1",
+									"type": "text"
+								},
+								{
+									"key": "pet",
+									"value": "pet1",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "color1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/pets/:id",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pets",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Single Pets",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/pets/:id",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"pets",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://dummy-1uiqpbv22-mmiftach.vercel.app/api/v1",
+			"type": "string"
+		}
+	]
+}

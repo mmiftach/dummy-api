@@ -18,7 +18,7 @@ const petsController = {
             const { id } = req.params
             const [rows, fields] = await pool.query("select * from pets where id = ?", [id])
             res.json({
-                data: rows
+                data: rows[0]
             })
         } catch (error) {
             console.log(error)
